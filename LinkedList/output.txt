@@ -1,0 +1,101 @@
+0:CREATE,,
+1:DEBUG,,
+0 >>> 
+2:ADD,o,
+3:DEBUG,,
+1 >>> o
+4:ADD,u,
+5:ADD,r,
+6:ADD,e,
+7:ADD,q,
+8:ADD,f,
+9:ADD,n,
+10:ADD,e,
+11:ADD,i,
+12:ADD,Y,
+13:DEBUG,,
+10 >>> o, u, r, e, q, f, n, e, i, Y
+14:ADD,P,
+15:DEBUG,,
+11 >>> o, u, r, e, q, f, n, e, i, Y, P
+16:SET,4,k
+17:SET,12,h
+<class 'Exception'>
+18:DEBUG,,
+11 >>> o, u, r, e, k, f, n, e, i, Y, P
+19:GET,8,
+20:GET,11,
+<class 'Exception'>
+21:INSERT,21,r
+<class 'Exception'>
+22:INSERT,4,i
+23:INSERT,4,k
+24:INSERT,4,T
+25:INSERT,4,h
+26:INSERT,4,e
+27:INSERT,4,r
+28:DEBUG,,
+17 >>> o, u, r, e, r, e, h, T, k, i, k, f, n, e, i, Y, P
+29:DELETE,6,
+30:DEBUG,,
+16 >>> o, u, r, e, r, e, T, k, i, k, f, n, e, i, Y, P
+31:DELETE,10,
+32:DEBUG,,
+15 >>> o, u, r, e, r, e, T, k, i, k, n, e, i, Y, P
+33:DELETE,11,
+34:DEBUG,,
+14 >>> o, u, r, e, r, e, T, k, i, k, n, i, Y, P
+35:DELETE,7,
+36:DEBUG,,
+13 >>> o, u, r, e, r, e, T, i, k, n, i, Y, P
+37:DELETE,13,
+<class 'Exception'>
+38:DEBUG,,
+13 >>> o, u, r, e, r, e, T, i, k, n, i, Y, P
+39:SWAP,1,3
+40:SWAP,7,8
+41:DEBUG,,
+13 >>> o, e, r, u, r, e, T, k, i, n, i, Y, P
+42:SWAP,0,13
+<class 'Exception'>
+43:DELETE,10,
+44:DEBUG,,
+12 >>> o, e, r, u, r, e, T, k, i, n, Y, P
+45:ADD,a,
+46:ADD,O,
+47:DEBUG,,
+14 >>> o, e, r, u, r, e, T, k, i, n, Y, P, a, O
+48:INSERT,12,u
+49:ADD,S,
+50:ADD,r,
+51:ADD,v,
+52:ADD,t,
+53:ADD,i,
+54:DEBUG,,
+20 >>> o, e, r, u, r, e, T, k, i, n, Y, P, u, a, O, S, r, v, t, i
+55:INSERT,25,b
+<class 'Exception'>
+56:SET,15,l
+57:INSERT,27,j
+<class 'Exception'>
+58:DEBUG,,
+20 >>> o, e, r, u, r, e, T, k, i, n, Y, P, u, a, O, l, r, v, t, i
+59:SET,10,D
+60:SWAP,16,13
+61:ADD,e,
+62:INSERT,20,S
+63:DEBUG,,
+22 >>> o, e, r, u, r, e, T, k, i, n, D, P, u, r, O, l, a, v, t, i, S, e
+64:INSERT,8,n
+65:INSERT,7,B
+66:INSERT,13,Y
+67:DEBUG,,
+25 >>> o, e, r, u, r, e, T, B, k, n, i, n, D, Y, P, u, r, O, l, a, v, t, i, S, e
+68:SET,14,o
+69:SWAP,0,7
+70:SWAP,2,9
+71:SWAP,18,20
+72:SWAP,2,23
+73:SWAP,8,12
+74:DEBUG,,
+25 >>> B, e, S, u, r, e, T, o, D, r, i, n, k, Y, o, u, r, O, v, a, l, t, i, n, e
